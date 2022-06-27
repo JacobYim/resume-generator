@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample Resume</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}">
+        <!-- <link rel="stylesheet" href="test.css"> -->
+    </head>
+    <body>
+        <div class="head">
+            <div class="name">Junghwan Yim</div>
+            <div class="position">Graduate Student Researcher</div>
+            <div class="intro" >
+                Data Scientist and Software Engineer solving problems with having broad data domain knowledge, development skills and deep understanding of AI, mathematical, or statistical modeling skills. Having experiences in analyzing, modeling, visualizing, and deploying various typed data as well as building the data pipeline, web, app service in both academic and industry fields. Having experiences leading teams or communities as a president or a project manager and achieving remarkable achievement with teams. Learn fast and solve problems by applying it by sharing what I learn with the team, thus maximizing the team's productivity.
+            </div> 
+        </div>
+        <div class="contacts">
+            <div class="contact_item">
+                <img src="{{ url_for('static', filename='img/email.png') }}"> jyim@buffalo.edu
+            </div>
+            <div class="contact_item">
+                <img src="{{ url_for('static', filename='img/call.png') }}"> 716-429-6355
+            </div>
+            <div class="contact_item">
+                <img src="{{ url_for('static', filename='img/linkedin.png') }}"> Buffalo, NY
+            </div>
+            <div class="contact_item">
+                <img src="{{ url_for('static', filename='img/position.png') }}"> linkedin.com/in/junghwanyim
+            </div>
+        </div>
+        <div class="body">
+            <div id="explain" class="column" >
+                <div class = "work">
+                    <div class="title">WORK EXPREIENCE</div>
+                    <div class="work_item">
+                        <div class="career_title">
+                            Graduate Student Researcher
+                        </div>
+                        <div class="work_place">
+                            University at Buffalo
+                        </div>
+                        <div class="work_date">
+                            <span>01/2021 - present</span>
+                            <span>Buffalo, NY</span>
+                        </div>
+                        <div class="work_title">Model for Elevation Map Prediction and Synthesis</div>
+                        <div class="work_contents">
+                            - Generated dynamic occupation map and elevation map distinguishing static object or dynamic object on the road from KITTI Dataset and ROS grid map package.
+                            <br/>
+                            - Developing GAN model to predict the next frames of elevation map and generating one elevation map synthesizing multiple elevation map from different vehicles.
+                        </div>
+                        <div class="work_title">Post-Processing for Static Object Detection (Traffic Sign Detection) </div>
+                        <div class="work_contents">
+                            - Composed knowledge graph of static object on the road with leading object detection team in Autonomous Vehicle Laboratory of the University at Buffalo (CAVAS).
+                            <br/>
+                            - Trained Yolo and RCNN models for traffic sign detection based on the knowledge graph and Mapiliary Traffic Sign Dataset, and the best model among models recorded 70% accuracy. 
+                            <br/>
+                            - Achieved stable detection performance using Kalman-Filter algorithm and calibration model and composed ROS package mapping detected the traffic signs and the distance with the traffic sign into HD (High Digital) Map with collaborating the CAVAS members.
+                        </div>
+                        <div class="work_title">Lane Detection Model with Reinforcement Learning </div>
+                        - Implemented lane detecting agents with reinforcement methods, A2C and DQN, in synchronous and asynchronous environments in CARLA simulation.
+                    </div>
+                    <div class="work_item">
+                        <div class="career_title">
+                            Data Scientist / Software Developer
+                        </div>
+                        <div class="work_place">
+                            Republic of Korea Cyber Operation Command
+                        </div>
+                        <div class="work_date">
+                            <span>05/2019 - 12/2020</span>
+                            <span>Seoul, Republic of Korea</span>
+                        </div>
+                        <div class="work_title">Developing Intelligence Operation System </div>
+                        <div class="work_contents">
+                            - Developed an entire data-driven intelligence system (Data Pipeline) collecting data and assisting analysis using TensorFlow Server, Apache Ecosystem (Hadoop, Kafka, and Spark) and ELK stack with the operation and development team. Developed Natural Language Processing, Image Processing, Malware detection modules using Machine Learning, Deep Learning, and Reinforcement Learning to analysis the collected data with TensorFlow, Keras, and Pytorch.
+                            <br/>
+                            - Awarded the Meritorious Service Medals for contribution and excellency by Software Development from Corp Commander and Commander of ROK Cyber Operations Command, two-star rear admiral.
+                        </div>
+                        <div class="work_title">Designing Inventory Management and Recipe Recommend System </div>
+                        <div class="work_contents">
+                            - Designed and developed demo for a data-driven recipes recommendation system for offering customized recipes based on the TensorFlow server for object detection in refrigerator of clients and personal information of the clients using TensorFlow Server, Apache Ecosystem (Hadoop, Kafka, and Spark) and ELK stack.
+                            <br/>
+                            - Awarded the Meritorious Service Medal in K-Startup Contest from Commander of ROK Personnel Command, two-star rear admiral.
+                        </div>
+                    </div>
+                </div>
+                <div class = "project">
+                    <div class="title">PROJECTS</div>
+                    {% for i in range(length) %}
+                    <div>
+                        <div class="project_title">
+                            {{names[i]}}
+                        </div>
+                        <div class="project_contents">
+                            {% for explain in explains[i] %}
+                            {{explain }}
+                            <br/>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="column">
+                <div class="title">
+                    SKILLS & COMPETENCIES
+                </div>
+                <div class = "skill">
+                    {% for skill in skills %}
+                        <span class="skill_item">{{skill}}</span>
+                    {% endfor %}
+                </div>
+                <div class = "certificates">
+                    <div class="title">
+                        CERTIFICATES
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert_title">
+                        Data Intensive Computing
+                        </div>
+                        University at Buffalo
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert_title">
+                        Probabilistic Graphical Model
+                        </div>
+                        Stanford University (Coursera)
+                    </div>
+                </div>
+                <div class = "education">
+                    <div class="title">
+                        EDUCATION
+                    </div>
+                    <div class="edu_item">
+                        <div class="edu_title">
+                            Master of Science in Physics
+                            <br/>
+                            Bachelor of Science in Computational Physics
+                            <br/>
+                            Bachelor of Science in Computer Science
+                        </div>
+                        <div class="edu_inst">
+                        University at Buffalo
+                        </div>
+                        2016 - 2022
+                    </div>
+                    <div class="edu_item">
+                        <div class="edu_title">
+                            Bachelor of Science in Physics with Pre-Law
+                            <br/>
+                            Bachelor of Science in Business Administration
+                            (Music Industry)
+                        </div class="edu_inst">
+                        <div>
+                            State University at New York in Fredonia
+                        </div>
+                        2013 - 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+    <footer>
+    </footer>
+</html>
