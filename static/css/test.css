@@ -104,6 +104,9 @@ img {
 .project{
     font-size: 1.0vh;
 }
+.project_item{
+    margin : 0.5vh;
+}
 .project_title{
     margin-top : 0.25vh;
     font-weight: bold;
@@ -179,6 +182,12 @@ img {
     margin-top : 0.25vh;
     font-weight: bold;
     font-size : var(--h5);
+    display: flex;
+    justify-content: space-between;
+}
+.award_title span {
+    font-size : 0.9vh;
+    color : rgb(82, 82, 82);
 }
 .award_contents{
     margin-right : 0.25vh;
