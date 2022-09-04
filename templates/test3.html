@@ -29,6 +29,77 @@
         </div>
         <div class="body">
             <div id="explain" class="column" >
+                <div class = "education">
+                    <div class="title">
+                        EDUCATION
+                    </div>
+                    <div class="edu_item">
+                        <div class="edu_inst">
+                            University at Buffalo
+                            <span>2016 - 2022</span>
+                        </div>
+                        <div class="edu_title">
+                            Master of Science in Physics
+                            <br/>
+                            Bachelor of Science in Computational Physics
+                            <br/>
+                            Bachelor of Science in Computer Science
+                        </div>
+                    </div>
+                    <div class="edu_item">
+                        <div class="edu_inst">
+                            State University at New York in Fredonia
+                            <span>2013 - 2016</span>
+                        </div>
+                        <div class="edu_title">
+                            Bachelor of Science in Physics with Pre-Law
+                            <br/>
+                            Bachelor of Science in Business Administration
+                            (Music Industry)
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class = "certificates">
+                    <div class="title">
+                        CERTIFICATES
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert_title">
+                        Data Intensive Computing
+                        <span>University at Buffalo</span>
+                        </div>
+                        
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert_title">
+                        Probabilistic Graphical Model
+                        <span>Stanford University (Coursera)</span>
+                        </div>
+                    </div>
+                </div> -->
+                <div class = "award">
+                    <div class="title">AWARDS</div>
+                    <div class="award_item">
+                        <div class="work_title">Meritorious Service Medal, Republic of Korea Personnel Command</div>
+                        <div class="work_contents">
+                            - Awarded in K-Startup Contest by designing and developing ingredient managing system and recipe recommend system from the commander of ROK Personnel Command, two-star rear admiral.
+                        </div>
+                    </div>
+                    <div class="award_item">
+                        <div class="work_title">Meritorious Service Medal, Republic of Korea Cyber Operation Command</div>
+                        <div class="work_contents">
+                            - Awarded for contribution and excellency by software development from the commander of ROK Cyber Operation Command, two-star rear admiral.
+                        </div>
+                    </div>
+                </div>
+                <div class = "skill">
+                    <div class="title">
+                        SKILLS & COMPETENCIES
+                    </div>
+                    {% for skill in skills %}
+                        <span class="skill_item">{{skill}}</span>
+                    {% endfor %}
+                </div>
                 <div class = "work">
                     <div class="title">WORK EXPREIENCE</div>
                     <div class="work_item">
@@ -97,64 +168,7 @@
                         </div>
                     </div>
                     {% endfor %}
-                </div>
-            </div>
-            <div class="column">
-                <div class = "skill">
-                    <div class="title">
-                        SKILLS & COMPETENCIES
-                    </div>
-                    {% for skill in skills %}
-                        <span class="skill_item">{{skill}}</span>
-                    {% endfor %}
-                </div>
-                <div class = "certificates">
-                    <div class="title">
-                        CERTIFICATES
-                    </div>
-                    <div class="cert-item">
-                        <div class="cert_title">
-                        Data Intensive Computing
-                        </div>
-                        University at Buffalo
-                    </div>
-                    <div class="cert-item">
-                        <div class="cert_title">
-                        Probabilistic Graphical Model
-                        </div>
-                        Stanford University (Coursera)
-                    </div>
-                </div>
-                <div class = "education">
-                    <div class="title">
-                        EDUCATION
-                    </div>
-                    <div class="edu_item">
-                        <div class="edu_inst">
-                            University at Buffalo
-                            <span>2016 - 2022</span>
-                        </div>
-                        <div class="edu_title">
-                            Master of Science in Physics
-                            <br/>
-                            Bachelor of Science in Computational Physics
-                            <br/>
-                            Bachelor of Science in Computer Science
-                        </div>
-                    </div>
-                    <div class="edu_item">
-                        <div class="edu_inst">
-                            State University at New York in Fredonia
-                            <span>2013 - 2016</span>
-                        </div>
-                        <div class="edu_title">
-                            Bachelor of Science in Physics with Pre-Law
-                            <br/>
-                            Bachelor of Science in Business Administration
-                            (Music Industry)
-                        </div>
-                    </div>
-                </div>
+                </div> 
             </div>
         </div>
         </div>

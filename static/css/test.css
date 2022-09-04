@@ -1,11 +1,18 @@
 :root {
-    --h1: 2.5vh; 
-    --h2: 2.1vh;
-    --h3: 1.5vh;
-    --h4: 1.2vh;
-    --h5: 1.0vh;
-    --h6: 0.9vh;
-    --h7: 0.95vh;
+    /* --h1: 2.5vh;  */
+    /* --h2: 2.1vh; */
+    /* --h3: 1.5vh; */
+    /* --h4: 1.2vh; */
+    /* --h5: 1.0vh; */
+    /* --h6: 0.9vh; */
+    /* --h7: 0.95vh; */
+    --h1: 2.55vh; 
+    --h2: 2.15vh;
+    --h3: 1.55vh;
+    --h4: 1.25vh;
+    --h5: 1.05vh;
+    --h6: 0.95vh;
+    --h7: 1.00vh;
 }  
 #explain{
     min-width: 45vh;
@@ -52,7 +59,7 @@ img {
     flex-direction: row;
 }
 .column{
-    margin : 0.4vh;
+    margin : 1vh;
 }
 .title {
     font-weight: bold;
@@ -72,6 +79,8 @@ img {
     font-size: var(--h5);
 }
 .career_title{
+    display: flex;
+    justify-content: space-between;
     margin-top : 0.25vh;
     font-weight: bold;
     font-size : 1.2vh;
@@ -82,15 +91,15 @@ img {
     font-size : var(--h5);
 }
 .work_place{
-    font-size : 1.1vh;
-}
-.work_date{
     display: flex;
     justify-content: space-between;
+    font-size : 1.1vh;
+}
+
+.work_item span{
     font-size : 0.9vh;
     color : rgb(82, 82, 82);
 }
-
 
 .project{
     font-size: 1.0vh;
@@ -106,14 +115,6 @@ img {
     margin-left : 0.25vh;
 }
 
-
-
-.skill{
-    /* width: 25vh; */
-    width : initial;
-    display:inline-block;
-    margin : 0.5vh;
-}
 .skill_item {
     background-color: hsl(224, 71%, 42%);
     color: white;
@@ -130,18 +131,23 @@ img {
     margin-bottom: 0.25vh;
 }
 
-
-
-
-
 .cert_title{
+    display: flex;
+    justify-content: space-between;
+    margin-top : 0.25vh;
     font-weight: bold;
-    font-size : 1.0vh;
+    font-size : var(--h5);
 }
+
+.cert_title span{
+    font-size : 0.9vh;
+    color : rgb(82, 82, 82);
+}
+
 .cert-item{
-    margin : 0.5vh;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
+    margin-left : 0.5vh;
+    padding-top: 0.1vh;
+    padding-bottom: 0.1vh;
 }
 .edu_title{
     font-weight: bold;
@@ -149,9 +155,33 @@ img {
 }
 .edu_inst{
     font-size: 1.2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edu_inst span {
+    font-size : 0.9vh;
+    color : rgb(82, 82, 82);
 }
 .edu_item{
     margin : 0.5vh;
 }
 
 
+
+.award{
+    font-size: 1.0vh;
+}
+.award_item{
+    margin : 0.5vh;
+}
+.award_title {
+    margin-top : 0.25vh;
+    font-weight: bold;
+    font-size : var(--h5);
+}
+.award_contents{
+    margin-right : 0.25vh;
+    margin-left : 0.25vh;
+    font-size: var(--h5);
+}
