@@ -1,0 +1,196 @@
+:root {
+    /* --h1: 2.5vh;  */
+    /* --h2: 2.1vh; */
+    /* --h3: 1.5vh; */
+    /* --h4: 1.2vh; */
+    /* --h5: 1.0vh; */
+    /* --h6: 0.9vh; */
+    /* --h7: 0.95vh; */
+    --h1: 2.55vh; 
+    --h2: 2.15vh;
+    --h3: 1.55vh;
+    --h4: 1.25vh;
+    --h5: 1.05vh;
+    --h6: 0.95vh;
+    --h7: 1.00vh;
+}  
+#explain{
+    min-width: 45vh;
+}
+body {
+    font-size: var(--h5);
+    font-family: "Century Gothic" Lato Calibri Arial Sans-serif;
+    padding : 0.1vh;
+    margin : 0;
+}
+.name{
+    font-size: var(--h1);
+    font-weight: bold;
+}
+.position{
+    font-size: var(--h2);
+}
+.intro{
+    font-size: var(--h5);
+}
+
+.contacts{
+    font-size: var(--h4);
+    border: 0.1vh solid black;
+    border-right: 1rem;
+    border-left: 1rem;
+    display: flex;
+    justify-content : center;
+}
+.contact_item{
+    margin : 0.5vh;
+    margin-left: 1.5vh;
+    margin-right: 1.5vh;
+}
+img { 
+    font-size: var(--h4);
+    height: var(--h4);
+    width: var(--h4);
+}
+
+
+.body{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    margin : 1vh;
+}
+.title {
+    font-weight: bold;
+    font-size : var(--h4);
+}
+
+
+.work{
+    font-size: 1.0vh;
+}
+.work_item{
+    margin : 0.5vh;
+}
+.work_contents{
+    margin-right : 0.25vh;
+    margin-left : 0.25vh;
+    font-size: var(--h5);
+}
+.career_title{
+    display: flex;
+    justify-content: space-between;
+    margin-top : 0.25vh;
+    font-weight: bold;
+    font-size : 1.2vh;
+}
+.work_title {
+    margin-top : 0.25vh;
+    font-weight: bold;
+    font-size : var(--h5);
+}
+.work_place{
+    display: flex;
+    justify-content: space-between;
+    font-size : 1.1vh;
+}
+
+.work_item span{
+    font-size : 0.9vh;
+    color : rgb(82, 82, 82);
+}
+
+.project{
+    font-size: var(--h5);;
+}
+.project_item{
+    margin : 0.5vh;
+}
+.project_title{
+    margin-top : 0.25vh;
+    font-weight: bold;
+    font-size : 1.0vh;    
+}
+.project_contents{
+    /* margin-top : 0.25vh; */
+    margin-right : 0.25vh;
+    margin-left : 0.25vh;
+}
+
+.skill_item {
+    background-color: hsl(224, 71%, 42%);
+    color: white;
+    border: solid 0.1vh;
+    border-color: gray;
+    border-radius: 0.8vh;
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+    height: 0.75vh;
+    padding-top: 0.75vh;
+    display: inline-block;
+    line-height: 0px;
+    margin-top: 0.25vh;
+    margin-bottom: 0.25vh;
+}
+
+.cert_title{
+    display: flex;
+    justify-content: space-between;
+    margin-top : 0.25vh;
+    font-weight: bold;
+    font-size : var(--h5);
+}
+
+.cert_title span{
+    font-size : 0.9vh;
+    color : rgb(82, 82, 82);
+}
+
+.cert-item{
+    margin-left : 0.5vh;
+    padding-top: 0.1vh;
+    padding-bottom: 0.1vh;
+}
+.edu_title{
+    font-weight: bold;
+    font-size : 1.0vh;
+}
+.edu_inst{
+    font-size: 1.2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edu_inst span {
+    font-size : 0.9vh;
+    color : rgb(82, 82, 82);
+}
+.edu_item{
+    margin : 0.5vh;
+}
+
+
+
+.award{
+    font-size: 1.0vh;
+}
+.award_item{
+    margin : 0.5vh;
+}
+.award_title {
+    margin-top : 0.25vh;
+    font-weight: bold;
+    font-size : var(--h5);
+    display: flex;
+    justify-content: space-between;
+}
+.award_title span {
+    font-size : 0.9vh;
+    color : rgb(82, 82, 82);
+}
+.award_contents{
+    margin-right : 0.25vh;
+    margin-left : 0.25vh;
+    font-size: var(--h5);
+}

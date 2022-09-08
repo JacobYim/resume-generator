@@ -2,15 +2,15 @@
 <html>
     <head>
         <title>Sample Resume</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/test3.css') }}">
         <!-- <link rel="stylesheet" href="test.css"> -->
     </head>
     <body>
         <div class="head">
-            <div class="name">Junghwan Yim</div>
-            <div class="position">Graduate Student Researcher</div>
+            <div class="name">{{data.head.name}}</div>
+            <div class="position">{{data.head.position}}</div>
             <div class="intro" >
-                Data Scientist and Software Engineer solving problems with having broad data domain knowledge, development skills and deep understanding of AI, mathematical, or statistical modeling skills. Having experiences in analyzing, modeling, visualizing, and deploying various typed data as well as building the data pipeline, web, app service in both academic and industry fields. Having experiences leading teams or communities as a president or a project manager and achieving remarkable achievement with teams. Learn fast and solve problems by applying it by sharing what I learn with the team, thus maximizing the team's productivity.
+                {{data.head.introduction}}
             </div> 
         </div>
         <div class="contacts">
@@ -33,132 +33,87 @@
                 <div class="title">
                     EDUCATION
                 </div>
+                {% for edu in data.education %}
                 <div class="edu_item">
                     <div class="edu_inst">
-                        University at Buffalo
-                        <span>2016 - 2022</span>
+                        {{edu.institution}}
+                        <span>{{edu.period}}</span>
                     </div>
                     <div class="edu_title">
-                        Master of Science in Physics
+                        {% for desc in edu.degrees %}
+                        {{desc}}
                         <br/>
-                        Bachelor of Science in Computational Physics
-                        <br/>
-                        Bachelor of Science in Computer Science
+                        {% endfor %}
                     </div>
                 </div>
-                <div class="edu_item">
-                    <div class="edu_inst">
-                        State University at New York in Fredonia
-                        <span>2013 - 2016</span>
-                    </div>
-                    <div class="edu_title">
-                        Bachelor of Science in Physics with Pre-Law
-                        <br/>
-                        Bachelor of Science in Business Administration
-                        (Music Industry)
-                    </div>
-                </div>
+                {% endfor %}
             </div>
-            <!-- <div class = "certificates">
+            <div class = "certificates">
                 <div class="title">
                     CERTIFICATES
                 </div>
+                {% for cert in data.certificates %}
                 <div class="cert-item">
                     <div class="cert_title">
-                    Data Intensive Computing
-                    <span>University at Buffalo</span>
-                    </div>
-                    
-                </div>
-                <div class="cert-item">
-                    <div class="cert_title">
-                    Probabilistic Graphical Model
-                    <span>Stanford University (Coursera)</span>
+                    {{cert.title}}
+                    <span>{{cert.institution}}</span>
                     </div>
                 </div>
-            </div> -->
+                {% endfor %}
+            </div>
             <div class = "award">
                 <div class="title">AWARDS</div>
+                {% for award in data.award %}
                 <div class="award_item">
-                    <div class="award_title">Meritorious Service Medal <span> Republic of Korea Personnel Command</span></div>
+                    <div class="award_title">{{award.title}} <span> {{award.institution}} </span></div>
                     <div class="award_contents">
-                        - Awarded in K-Startup Contest by designing and developing ingredient managing system and recipe recommend system from the commander of ROK Personnel Command, two-star rear admiral.
+                        {{award.description}}
                     </div>
                 </div>
-                <div class="award_item">
-                    <div class="award_title">Meritorious Service Medal <span>Republic of Korea Cyber Operation Command</span></div>
-                    <div class="award_contents">
-                        - Awarded for contribution and excellency by software development from the commander of ROK Cyber Operation Command, two-star rear admiral.
-                    </div>
-                </div>
+                {% endfor %}
             </div>
             <div class = "skill">
                 <div class="title">
                     SKILLS & COMPETENCIES
                 </div>
-                {% for skill in skills %}
+                {% for skill in data.skills %}
                     <span class="skill_item">{{skill}}</span>
                 {% endfor %}
             </div>
             <div class = "work">
                 <div class="title">WORK EXPREIENCE</div>
+                {% for career in data.career %}
                 <div class="work_item">
                     <div class="career_title">
-                        Graduate Student Researcher
-                        <span>01/2021 - present</span>
+                        {{career.career_title}}
+                        <span>{{career.period}}</span>
                     </div>
                     <div class="work_place">
-                        University at Buffalo
-                        <span>Buffalo, NY</span>
+                        {{career.place}}
+                        <span>{{career.address}}</span>
                     </div>
-                    <div class="work_title">Model for Elevation Map Prediction and Synthesis</div>
+                    {% for work in career.works %}
+                    <div class="work_title">{{work.title}}</div>
                     <div class="work_contents">
-                        - Generated dynamic occupation map and elevation map distinguishing static object or dynamic object on the road from KITTI Dataset and ROS grid map package.
+                        {% for desc in work.description %}
+                        {{desc}}
                         <br/>
-                        - Developing GAN model to predict the next frames of elevation map and generating one elevation map synthesizing multiple elevation map from different vehicles.
+                        {% endfor %}
                     </div>
-                    <div class="work_title">Post-Processing for Static Object Detection (Traffic Sign Detection) </div>
-                    <div class="work_contents">
-                        - Composed knowledge graph of static object on the road with leading object detection team in Autonomous Vehicle Laboratory of the University at Buffalo (CAVAS).
-                        <br/>
-                        - Trained Yolo and RCNN models for traffic sign detection based on the knowledge graph and Mapiliary Traffic Sign Dataset, and the best model among models recorded 70% accuracy. 
-                        <br/>
-                        - Achieved stable detection performance using Kalman-Filter algorithm and calibration model and composed ROS package mapping detected the traffic signs and the distance with the traffic sign into HD (High Digital) Map with collaborating the CAVAS members.
-                    </div>
-                    <div class="work_title">Lane Detection Model with Reinforcement Learning </div>
-                    - Implemented lane detecting agents with reinforcement methods, A2C and DQN, in synchronous and asynchronous environments in CARLA simulation.
+                    {% endfor %}
                 </div>
-                <div class="work_item">
-                    <div class="career_title">
-                        Data Scientist / Software Developer
-                        <span>05/2019 - 12/2020</span>
-                    </div>
-                    <div class="work_place">
-                        Republic of Korea Cyber Operation Command
-                        <div>Seoul, Republic of Korea</div>
-                    </div>
-                    <div class="work_title">Developing Intelligence Operation System </div>
-                    <div class="work_contents">
-                        - Developed an entire data-driven intelligence system (Data Pipeline) collecting data and assisting analysis using TensorFlow Server, Apache Ecosystem (Hadoop, Kafka, and Spark) and ELK stack with the operation and development team. 
-                        <br/>
-                        - Developed Natural Language Processing, Image Processing, Malware detection modules using Machine Learning, Deep Learning, and Reinforcement Learning to analysis the collected data with TensorFlow, Keras, and Pytorch.
-                    </div>
-                    <div class="work_title">Designing Inventory Management and Recipe Recommend System </div>
-                    <div class="work_contents">
-                        - Designed and developed demo for a data-driven recipes recommendation system for offering customized recipes based on the TensorFlow server for object detection in refrigerator of clients and personal information of the clients using TensorFlow Server, Apache Ecosystem (Hadoop, Kafka, and Spark) and ELK stack.
-                    </div>
-                </div>
+                {% endfor %}
             </div>
             <div class = "project">
                 <div class="title">PROJECTS</div>
-                {% for i in range(length) %}
+                {% for i in range(data.projects|length) %}
                 <div class="project_item">
                     <div class="project_title">
-                        {{names[i]}}
+                        {{data.projects[i].name}}
                     </div>
                     <div class="project_contents">
-                        {% for explain in explains[i] %}
-                        {{explain }}
+                        {% for description in data.projects[i].description %}
+                        {{description }}
                         <br/>
                         {% endfor %}
                     </div>
