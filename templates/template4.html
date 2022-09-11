@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{data.title}}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/template4.css') }}">
+    </head>
+    <body>
+        <div class="head">
+            <div class="name">{{data.head.name}}</div>
+            <div class="position">{{data.head.position}}</div>
+            <div class="intro" >
+                {{data.head.introduction}}
+            </div> 
+        </div>
+        <div class="contacts">
+            <div class="item">
+                <img src="{{ url_for('static', filename='img/email.png') }}"> jyim@buffalo.edu
+            </div>
+            <div class="item">
+                <img src="{{ url_for('static', filename='img/call.png') }}"> 716-429-6355
+            </div>
+            <div class="item">
+                <img src="{{ url_for('static', filename='img/position.png') }}"> Buffalo, NY
+            </div>
+            <div class="item">
+                <img src="{{ url_for('static', filename='img/linkedin.png') }}"> linkedin.com/in/junghwanyim
+            </div>
+        </div>
+        <div class="body">
+            <div id="explain" class="column" >
+                <div class = "education">
+                    <div class="title">
+                        EDUCATION
+                    </div>
+                    {% for edu in data.education %}
+                    <div class="item">
+                        <div class="inst">
+                            {{edu.institution}}
+                            <span>{{edu.period}}</span>
+                        </div>
+                        <div class="title">
+                            {% for desc in edu.degrees %}
+                            {{desc}}
+                            <br/>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div> 
+                <div class = "work">
+                    <div class="title">WORK EXPREIENCE</div>
+                    {% for career in data.career %}
+                    <div class="item">
+                        <div class="title">
+                            {{career.career_title}}
+                            <span>{{career.period}}</span>
+                        </div>
+                        <div class="place">
+                            {{career.place}}
+                            <span>{{career.address}}</span>
+                        </div>
+                        {% for work in career.works %}
+                        <div class="carrier">
+                            <div class="title">{{work.title}}</div>
+                            <div class="contents">
+                                {% for desc in work.description %}
+                                {{desc}}
+                                <br/>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="column">
+                <div class = "project">
+                    <div class="title">PROJECTS</div>
+                    {% for i in range(data.projects|length) %}
+                    <div class="item">
+                        <div class="title">
+                            {{data.projects[i].name}}
+                        </div>
+                        <div class="contents">
+                            {% for description in data.projects[i].description %}
+                            {{description }}
+                            <br/>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class = "skill">
+                    <div class="title">
+                        SKILLS
+                    </div>
+                    {% for skill in data.skills %}
+                        <span class="item">{{skill}}</span>
+                    {% endfor %}
+                </div>
+                <div class = "certificates">
+                    <div class="title">
+                        CERTIFICATES
+                    </div>
+                    {% for cert in data.certificates %}
+                    <div class="item">
+                        <div class="title">
+                        {{cert.title}}
+                        <span>{{cert.institution}}</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+            </div>
+        </div>
+        </div>
+    </body>
+    <footer>
+    </footer>
+</html>

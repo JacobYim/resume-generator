@@ -24,17 +24,32 @@ def hello_world():
 
     length_items = len(project_names)
 
-    return render_template('test3.html', skills = skills, names=project_names, explains=project_explains, length=length_items)
+    return render_template('test.html', skills = skills, names=project_names, explains=project_explains, length=length_items)
 
 @app.route('/template3', methods=['GET'])
 def tempelate3():
 
     files = os.listdir('jobs')
-    f = open("jobs/"+files[0], "r+")
+    file = files[0]
+    print(file)
+    f = open("jobs/"+file, "r+")
     data = json.load(f)
+    data['title'] = file.split('.')[0]
     return render_template('test3.html', 
         data = data
     )
+
+@app.route('/template1', methods=['GET'])
+def tempelate1():
+
+    files = os.listdir('jobs')
+    file = files[0]
+    print(file)
+    f = open("jobs/"+file, "r+")
+    data = json.load(f)
+    data['title'] = file.split('.')[0]
+
+    return render_template('template4.html', data = data)
 
 
 if __name__ == '__main__':

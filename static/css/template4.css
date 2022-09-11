@@ -1,0 +1,236 @@
+:root {
+    --d : 0.3vh;
+    /* name */
+    --h1: calc(2.55vh + var(--d));  
+    /* current job */
+    --h2: calc(1.50vh + var(--d));
+    /* Section Title */
+    --h3: calc(1.55vh + var(--d));
+    /* Positions, Projects*/
+    --h4: calc(1.25vh + var(--d));
+    /* place, project title */
+    --h5: calc(1.05vh + var(--d));
+    /* project description */
+    --h6: calc(0.95vh + var(--d));
+    --h7: calc(1.00vh + var(--d));
+
+    --identation : 0.25vh;
+    --sectiondiv : 0.25vh;
+
+    --column-size : 60vw;
+    --p1: 0.1vh;
+}  
+#explain{
+    min-width: var(--column-size);
+}
+body {
+    font-size: var(--h5);
+    font-family: "Century Gothic" Lato Calibri Arial Sans-serif;
+    padding : var(--p1);
+    margin : 0;
+}
+.name{
+    font-size: var(--h1);
+    font-weight: bold;
+}
+.position{
+    font-size: var(--h2);
+}
+.intro{
+    font-size: var(--h7);
+}
+
+/* contacts */
+.contacts{
+    font-size: var(--h4);
+    border: 0.1vh solid black;
+    border-right: 1rem;
+    border-left: 1rem;
+    display: flex;
+    justify-content : center;
+}
+.contacts .item{
+    margin : 0.5vh;
+    margin-left: 1.5vh;
+    margin-right: 1.5vh;
+}
+.contacts img { 
+    font-size: var(--h4);
+    height: var(--h4);
+    width: var(--h4);
+}
+
+/* layout */
+.body{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    margin : 1vh;
+}
+.title {
+    font-weight: bold;
+    font-size : var(--h3);
+}
+
+/* works */
+.work{
+    margin-top: var(--sectiondiv);
+}
+
+.work .title{
+    display: flex;
+    justify-content: space-between;
+    margin-top : 0.25vh;
+    font-weight: bold;
+}
+.work .item{
+    margin : 0.5vh;
+    margin-top: var(--sectiondiv);
+    margin-left : var(--identation);
+}
+.work .item .title {
+    margin-top : 0.25vh;
+    font-weight: bold;
+    font-size : var(--h4);
+}
+.work .item .title span{
+    font-size : var(--h7);
+    color : rgb(82, 82, 82);
+}
+.work .item .place{
+    display: flex;
+    justify-content: space-between;
+    font-size : var(--h5);
+}
+.work .item .place span{
+    font-size : var(--h7);
+    color : rgb(82, 82, 82);
+}
+.work .item .contents{
+    /* margin-right : 0.25vh; */
+    margin-left : var(--identation);
+    font-size: var(--h6);
+}
+
+.work .item .carrier{
+    margin-left : var(--identation);
+}
+
+.work .item .carrier .title {
+    font-size : var(--h5);
+}
+.work .item .carrier .contents {
+    font-size : var(--h6);
+    margin-left : var(--identation);
+}
+
+/* project */
+.project{
+    margin-top: var(--sectiondiv);
+}
+
+.project .title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--sectiondiv);
+    font-weight: bold;
+}
+
+.project .item {
+    margin-left : var(--identation);
+}
+
+.project .item .title {
+    font-size : var(--h5);
+}
+
+.project .item .contents {
+    font-size : var(--h6);
+    margin-left : var(--identation);
+}
+
+/* skill */
+
+.skill{
+    margin-top: var(--sectiondiv);
+    margin-left : var(--identation);
+}
+
+.skill .item {
+    background-color: hsl(224, 71%, 42%);
+    color: white;
+    border: solid 0.1vh;
+    border-color: gray;
+    border-radius: 0.8vh;
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+    height: 0.75vh;
+    padding-top: 0.75vh;
+    display: inline-block;
+    line-height: 0px;
+    margin-top: 0.25vh;
+    margin-bottom: 0.25vh;
+}
+
+/* certificate */
+.certificates{
+    margin-top: var(--sectiondiv);
+}
+
+.certificates .title{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.certificates .item{
+    margin-top: var(--sectiondiv);
+    margin-left : var(--identation);
+}
+
+.certificates .item .title{
+    display: flex;
+    justify-content: space-between;
+    font-weight: initial;
+    font-size : var(--h5);
+}
+
+.certificates .item .title span{
+    font-size : var(--h7);
+    color : rgb(82, 82, 82);
+}
+
+/* education */
+.education{
+    margin-top: var(--sectiondiv);
+}
+
+.education .title{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.education .item{
+    margin-top: var(--sectiondiv);
+    margin-left : var(--identation);
+}
+
+.education .item .inst{
+    display: flex;
+    justify-content: space-between;
+    font-size : var(--h5);
+    font-weight: bold;
+}
+
+.education .item .inst span{
+    font-size : var(--h7);
+    color : rgb(82, 82, 82);
+}
+
+.education .item .title {
+    margin-left : var(--identation);
+    font-size : var(--h5);
+    font-weight:initial;
+}
