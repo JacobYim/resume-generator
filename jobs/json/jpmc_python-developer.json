@@ -1,0 +1,118 @@
+{
+    "head" : {
+      "name" : "Junghwan Yim",
+      "position" : "Graduate Student Researcher",
+      "introduction" : "Software Engineer solving problems with having broad data domain knowledge, development skills and deep understanding of AI, mathematical, or statistical modeling skills. Having experiences in analyzing, modeling, visualizing, and deploying various typed data as well as building the data pipeline, web, app service in both academic and industry fields. Having experiences leading teams or communities as a president or a project manager and achieving remarkable achievement with teams. Learn fast and solve problems by applying it by sharing what I learn with the team, thus maximizing the team's productivity."  
+    },
+    "education":[ 
+        {
+            "institution" : "University at Buffalo",
+            "period" : "2016 - 2022",
+            "degrees" : [
+                "Master of Science in Physics",
+                "Bachelor of Science in Computational Physics",
+                "Bachelor of Science in Computer Science"
+            ]
+        },
+        {
+            "institution" : "State University at New York in Fredonia",
+            "period" : "2013 - 2016",
+            "degrees" : [
+                "Bachelor of Science in Physics with Pre-Law",
+                "Bachelor of Science in Business Administration (Music Industry)"
+            ]
+        }
+    ],
+    "award" :[ 
+        {
+            "title":"Meritorious Service Medal",
+            "institution" : "Republic of Korea Personnel Command",
+            "description" : "- Awarded in K-Startup Contest by designing and developing ingredient managing system and recipe recommend system from the commander of ROK Personnel Command, two-star rear admiral."
+        },
+        {
+            "title":"Meritorious Service Medal",
+            "institution" : "Republic of Korea Cyber Operation Command",
+            "description" : "- Awarded for contribution and excellency by software development from the commander of ROK Cyber Operation Command, two-star rear admiral."
+        }
+    ],
+    "career" :[ 
+        {
+            "career_title" : "Graduate Student Researcher",
+            "period" : "01/2021 - present",
+            "place" :  "University at Buffalo",
+            "address" : "Buffalo, NY",
+            "works" : [
+                {
+                    "title" : "2-Step Biometric Authentication by IMU Sensors at Phone and Watch",
+                    "description" : [
+                        "- Developing a model authenticating users by comparing transforming function between IMU sensor signals at phone and watch for each person with signal processing and GAN model.",
+                        "- Developed applications for experiments and tests by mobile android and system programing with reverse engineering."
+                    ]
+                },
+                {
+                    "title" : "Model for Elevation Map Prediction and Synthesis",
+                    "description" : [
+                        "- Generated dynamic occupation maps and elevation maps distinguishing static object or dynamic object on the road from KITTI Dataset and ROS grid map package.",
+                        "- Predicted the next frames of the maps with sensor fusion of IMU sensor data at vehicles and BEV elevation map from LiDAR data",
+                        "- Reduced computational cost by merging two different maps than merging two differnt elevation maps from vehicles."
+                    ]
+                }
+            ]
+        },
+        {
+            "career_title" : "Data Scientist / Software Developer",
+            "period" : "05/2019 - 12/2020",
+            "place" :  "Republic of Korea Cyber Operation Command",
+            "address" : "Seoul, Republic of Korea",
+            "works" : [
+                {
+                    "title" : "Developing Intelligence Operation System",
+                    "description" : [
+                        "- Developed an entire real-time stream data-driven intelligence system (Data Pipeline) collecting data and assisting analysis using TensorFlow Server, Apache Ecosystem (Hadoop, Kafka, and Spark) and ELK stack with the operation and development team.", 
+                        "- Developed Natural Language Processing, Image Processing, Malware detection modules using Machine Learning, Deep Learning, and Reinforcement Learning to analysis the collected data with TensorFlow, Keras, and Pytorch.",
+                        "- Developed REST API server for the result of the analysis with Django and GraphQL and Led development team and reflected requirements with non-engineering team",
+                        "- Awarded the Meritorious Service Medals for contribution and excellency by Software Development from Corp Commander and Commander of ROK Cyber Operations Command, two-star rear admiral."
+                    ]
+                },
+                {
+                    "title" : "Designing Inventory Management and Recipe Recommend System",
+                    "description" : [
+                        "- Designed and developed demo for a data-driven recipes recommendation system for offering customized recipes based on the TensorFlow server for object detection in refrigerator of clients and personal information of the clients using TensorFlow Server, Apache Ecosystem (Hadoop, Kafka, and Spark) and ELK stack with Azure Recognition service.",
+                        "- Awarded the Meritorious Service Medal in K-Startup Contest from Commander of ROK Personnel Command, two-star rear admiral."
+                    ]
+                }
+            ]
+        }
+    ],
+    "projects" : [
+        {
+            "name" : "Tastie, Mobile Application",
+            "description" : [
+                "- Developed and operated a mobile application recommending restaurants based on the keywords to avoid suffering searching good restaurants, which in total reached 10K+ users in 2 months.",
+                "- Built the application with ReactNative, Django server and a data pipeline with AWS EMR, EC2, Elasticsearch, Kafka and Terraform."
+            ]
+        },
+        {
+            "name" : "Korean Society Webpage",
+            "description" : [
+                "- Developed Korean Society Webpage for Koreans in Buffalo, New York by leading Korean Students in various majors with JSP, and renewed with React.js, Django, GCP and Firebase.",
+                "- Led development team and got insights by analyzing users with survey, interviews and aggregated metrics from Google Analytics.",
+                "- Made 300 user increments in a semester by grouping people and providing optimized services and contents for each sub-groups."
+            ]
+        }
+    ],
+    "skills" : [        
+        "C", "C++", "Python", "Java", "Javascropt", "Typescript", "Go", "R", "Scala", "SAS", "MATLAB", "SQL",
+        "numpy", "pandas", "seaborn", "scikit-learn", "OpenCV" ,"nltk", 
+        "Keras", "Pytorch", "TensorFlow", 
+        "CUDA", "MPI", "OpenMP",
+        "Django", "Flask", "Node.js", "Next.js", "PHP", "JSP", "jQuery", "React.js", "Vue.js", 
+        "REST", "GraphQL", "gRPC", "WebSocket",
+        "android Studio", "ReactNative", "Flutter",
+        "ROS", "Elasticsearch", "Tomcat", "Spark", "Hadoop", "Airflow", "HIVE",
+        "MySQL", "Postgresql","MongoDB", 
+        "Docker", "Kubernetes", "AWS", "Azure", "GCP", "MapReduce", "Teraform", "Ansible",
+        "GIT", "JIRA", "Jenkins",
+        "Research", "ETL", "NLP", "Image Processing", "Machine Learning", "Deep Learning", "Reinforcement Learning"
+    ]
+}

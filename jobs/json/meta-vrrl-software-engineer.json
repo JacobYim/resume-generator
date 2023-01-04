@@ -1,0 +1,131 @@
+{
+    "head" : {
+      "name" : "Junghwan Yim",
+      "position" : "Graduate Student Researcher",
+      "introduction" : "Engineer and Scientist solving problems with having broad data domain knowledge, development skills, and deep understanding of AI, mathematical, or statistical modeling skills. Having experiences in analyzing, modeling, visualizing, and deploying various typed data as well as building the data pipeline, web, and app service in both academic and industry fields. Having experience leading teams or communities as a president or a project manager and achieving remarkable achievements with teams. Learn fast and solve problems by applying it by sharing what I learn with the team, thus maximizing the team's productivity."  
+    },
+    "education":[ 
+        {
+            "institution" : "University at Buffalo",
+            "period" : "2016 - 2022",
+            "degrees" : [
+                "Master of Science in Physics",
+                "Bachelor of Science in Computational Physics",
+                "Bachelor of Science in Computer Science"
+            ]
+        },
+        {
+            "institution" : "State University at New York in Fredonia",
+            "period" : "2013 - 2016",
+            "degrees" : [
+                "Bachelor of Science in Physics with Pre-Law",
+                "Bachelor of Science in Business Administration (Music Industry)"
+            ]
+        }
+    ],
+    "certificates" : [
+        {
+            "title" : "Data Intensive Computing",
+            "institution" : "University at Buffalo"
+        },{
+            "title" : "Probabilistic Graphical Model",
+            "institution" : "Stanford University"
+        }
+    ],
+    "award" :[ 
+        {
+            "title":"Meritorious Service Medal",
+            "institution" : "Republic of Korea Personnel Command",
+            "description" : "- Awarded in K-Startup Contest by designing and developing ingredient managing system and recipe recommend system from the commander of ROK Personnel Command, two-star rear admiral."
+        },
+        {
+            "title":"Meritorious Service Medal",
+            "institution" : "Republic of Korea Cyber Operation Command",
+            "description" : "- Awarded for contribution and excellency by software development from the commander of ROK Cyber Operation Command, two-star rear admiral."
+        }
+    ],
+    "career" :[ 
+        {
+            "career_title" : "Graduate Student Researcher",
+            "period" : "01/2021 - present",
+            "place" :  "University at Buffalo",
+            "address" : "Buffalo, NY",
+            "works" : [
+                
+                {
+                    "title" : "Model for Elevation Map Prediction and Synthesis",
+                    "description" : [
+                        "- Generated dynamic occupation maps and elevation maps distinguishing static object or dynamic object on the road from KITTI Dataset and ROS grid map package.",
+                        "- Predicted the next frames of the maps with sensor fusion of IMU sensor data at vehicles and BEV elevation map from LiDAR data at the customized map with OpenDrive and RoadRunner in CARLA simulator ",
+                        "- Merged elevation maps with OpenCV FLANN and RANSAC algorithm and GPS data.",
+                        "- Reduced computational cost by merging two different maps than merging two different elevation maps from vehicles."
+                    ]
+                },
+
+                {
+                    "title" : "Post-Processing for Static Object Detection (Traffic Sign Detection)",
+                    "description" : [
+                        "- Developed optimized object boundary box Post-Processing algorithm after object detection model for the static objects on the road.",
+                        "- Trained lightest Yolo and RCNN models for traffic sign detection and embedded the models based on the customized knowledge graph and record 70% accuracy rate.",
+                        "- Achieved 94% accuracy stable and lighter detection performance using Kalman-Filter and SLAM algorithm and calibration model and composed ROS package mapping detected the traffic signs and the distance with the traffic sign into High Digital Map."
+                    ]
+                }
+
+            ]
+        },
+        {
+            "career_title" : "Software Engineer",
+            "period" : "05/2019 - 12/2020",
+            "place" :  "Republic of Korea Cyber Operation Command",
+            "address" : "Seoul, Republic of Korea",
+            "works" : [
+                {
+                    "title" : "Developing Intelligence Operation System",
+                    "description" : [
+                        "- Designed and Developed an entire large-scale distributed intelligence system (Data Pipeline and Models) collecting and analyzing data by using TensorFlow Server, Apache Ecosystem (Hadoop, Kafka, and Spark) and ELK stack by communicating with the operation researchers and engineers.", 
+                        "- Developed Machine Learning, Deep Learning, Reinforcement Learning models in terms of Natural Language Processing, Image Processing, Malware detection",
+                        "- Measured and optimized each model's performance to their required functions with the real-time stream or batch processing",
+                        "- Managed a team and system source codes for guaranteeing reliability, maintainability, and scalability properties as a team lead",
+                        "- Awarded the Meritorious Service Medals for contribution and excellency by Software Development from Corp Commander and Commander of ROK Cyber Operations Command, two-star rear admiral."
+                    ]
+                },
+                {
+                    "title" : "Designing Inventory Management and Recipe Recommend System",
+                    "description" : [
+                        "- Designed and developed a demo for a data-driven distributed recipes recommendation system for offering customized recipes based on Machine Learning models with the TensorFlow server for object detection and object localization in the refrigerator of clients and personal information of the clients using TensorFlow Server, Apache Ecosystem (Hadoop, Kafka, and Spark) and ELK stack with Azure Recognition service.",
+                        "- Awarded the Meritorious Service Medal in K-Startup Contest from Commander of ROK Personnel Command, two-star rear admiral."
+                    ]
+                }
+            ]
+        }
+    ],
+    "projects" : [
+        {
+            "name" : "Electron Transportation Simulation Development and Analysis in HPC",
+            "description" : [
+                "- Designed the Brownian motion simulation for electrons transportations theories (Caldeira Legette, Brownian, Langevin)",
+                "- Developed the simulations and optimized with High-Performance Computing using C++, Python, MPI, CUDA, and OpenMP.",
+                "- Suggested the method for designing High-Performance Computing Simulation and published as the thesis of master degree."
+            ]
+        },
+        {
+            "name" : "Stock and Bitcoin Autotrading Algorithm and Data Pipeline Development with Reinforcement Learning",
+            "description" : [
+                "- Trained an investment agent less losing money in a bear market with the stock data of Samsung Electronics and Hyundai Motors from 1980 to 2010 with A2C Model and implemented an auto trading program using Volatility Breakout Strategy and 14-days Moving Average, made a 3% return on Bitcoin.",
+                "- Build Data Pipeline and parallel algorithm supporting high-frequency finance data and taking action in real-time."
+            ]
+        }
+    ],
+    "skills" : [
+        "Research", "Machine Learning", "Deep Learning", "Reinforcement Learning", 
+        "Robotics", "Image Processing", 
+        "C++", "C", "Python", "MATLAB", "SQL", "No-SQL",
+        "ROS", "RVIZ", "GAZEBO", "SLAM", "OpenGL", "OpenCV", 
+        "HIVE", "MySQL", "MongoDB",
+        "Elasticsearch", "Spark", "Hadoop", "Airflow", 
+        "Docker", "Kubernetes", "AWS", "Azure", "GCP", 
+        "Teraform", "Ansible", "GIT",
+        "MapReduce",
+        "numpy", "pandas", "seaborn", "scikit-learn" ,"nltk", "Keras", "Pytorch", "TensorFlow"
+    ]
+}

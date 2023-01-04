@@ -1,0 +1,132 @@
+{
+    "head" : {
+      "name" : "Junghwan Yim",
+      "position" : "Graduate Student Researcher",
+      "introduction" : "Fullstack Software Engineer solving problems with software development skills and analytical architecture skills. Experienced in all processes of software development including research, design, development, testing, and deploying. Experienced leading and operating teams or communities as a president or a project manager and achieving remarkable achievements with teams. I am a fast learner and a problem solver with sharing what I learn with to team, which maximizes productivity."  
+    },
+    "education":[ 
+        {
+            "institution" : "University at Buffalo",
+            "period" : "2016 - 2022",
+            "degrees" : [
+                "Master of Science in Physics",
+                "Bachelor of Science in Computational Physics",
+                "Bachelor of Science in Computer Science"
+            ] 
+        },
+        {
+            "institution" : "State University at New York in Fredonia",
+            "period" : "2013 - 2016",
+            "degrees" : [
+                "Bachelor of Science in Physics with Pre-Law",
+                "Bachelor of Science in Business Administration (Music Industry)"
+            ]
+        }
+    ],
+    "certificates" : [
+        {
+            "title" : "Data Intensive Computing",
+            "institution" : "University at Buffalo"
+        }
+    ],
+    "award" :[ 
+        {
+            "title":"Meritorious Service Medal",
+            "institution" : "Republic of Korea Personnel Command"
+        },
+        {
+            "title":"Meritorious Service Medal",
+            "institution" : "Republic of Korea Cyber Operation Command"
+        }
+    ],
+    "career" :[ 
+        {
+            "career_title" : "Graduate Student Researcher",
+            "period" : "01/2021 - present",
+            "place" :  "University at Buffalo",
+            "address" : "Buffalo, NY",
+            "works" : [
+                {
+                    "title" : "2-Step Biometric Authentication by IMU Sensors at Phone and Watch",
+                    "description" : [
+                        "- Designed and developed authentication model with transfer funciton between watch and phone imu sensor data estimated with CycleGAN model and various signal processings and machine learning methods.",
+                        "- Developed various sortwares for the reseach including Android mobile applications and watch applications to collect IMU sensor data and run the authentication model in the mobiles, a real-time signal monitoring monitoring system from sensors conncected with bluetooth",
+                        "- Submitted this research to Mobisys 2022"
+                    ]
+                },
+                {
+                    "title" : "Model for Elevation Map Prediction and Synthesis",
+                    "description" : [
+                        "- Generated dynamic occupation maps and elevation maps distinguishing static object or dynamic object on the road from KITTI Dataset and ROS grid map package.",
+                        "- Reduced computational cost by merging two different maps from vehicles with GAN model to predict the next frames of the maps.",
+                        "- Developed software message queue system sharing individual generated maps and integrating ROS package with C++"
+                    ]
+                },
+                {
+                    "title" : "Post-Processing for Static Object Detection (Traffic Sign Detection)",
+                    "description" : [
+                        "- Trained Yolo and RCNN models for traffic sign detection based on the knowledge graph and Mapiliary Traffic Sign Dataset, and the best model among models recorded 70% accuracy.",
+                        "- Achieved stable and lighter detection performance using Kalman-Filter algorithm and calibration model and composed ROS package mapping detected the traffic signs and the distance with the traffic sign into HD (High Digital) Map with collaborating the CAVAS members."
+                    ]
+                }
+            ]
+        },
+        {
+            "career_title" : "Data Scientist / Software Developer",
+            "period" : "05/2019 - 12/2020",
+            "place" :  "Republic of Korea Cyber Operation Command",
+            "address" : "Seoul, Republic of Korea",
+            "works" : [
+                {
+                    "title" : "Developing Intelligence Operation System",
+                    "description" : [
+                        "- Developed an intelligence system collecting data and assisting analysis using Apache Ecosystem and ELK stack by cooperating with the operation and development team.",
+                        "- Developed Natural Language Processing, Image Processing, Malware detection modules using Reverse Engineering, Machine Learning, Deep Learning, and Reinforcement Learning to analysis the collected data.",
+                        "- Awarded for contribution and excellency by software development from the commander of ROK Cyber Operation Command, two-star rear admiral."
+                    ]
+                },
+                {
+                    "title" : "Designing Inventory Management and Recipe Recommend System",
+                    "description" : [
+                        "- Designed and developed demo for managing ingredients and recipes recommendation system for offering customized recipes based on the ingredients and user data.",
+                        "- Improved recogniton model for ingredients in a refregiator by analyzing and collecting user data and ingredients in their refregiator.",
+                        "- Awarded in K-Startup Contest by designing and developing ingredient managing system and recipe recommend system from the commander of ROK Personnel Command, two-star rear admiral."
+                    ]
+                }
+            ]
+        }
+    ],
+    "projects" : [
+        {
+            "name" : "Vehicle CAN Monitoring Software",
+            "description" : [
+                "- Developed analyzing and sending signals to CAN Bus Network in car remotely with C# and .Net Winform",
+                "- Automatically analyzed Vehicle Can Bus Database and applied by the VIN in the Database",
+                "- Made easy to check up the connected car service status and driving performance by utilizing the vehicle's odometer remotely."
+            ]
+        },
+        {
+            "name" : "Tastie, Mobile Application",
+            "description" : [
+                "- Developed and operated a mobile application recommending restaurants based on the keywords to avoid suffering searching good restaurants, which in total reached 10K+ users in 2 months.",
+                "- Analyzed keywords, user data, and restaurant data collected by quantitating and qualitative methods to improve user experience.",
+                "- Improved recommending system and user interface by the discovered insight in analysis."
+            ]
+        },
+        {
+            "name" : "Korean Society Webpage",
+            "description" : [
+                "- Developed Korean Society Webpage for Koreans in Buffalo, New York by leading Korean Students in various majors.",
+                "- Got insights by analyzing users with surveys, interviews, and aggregated metrics from Google Analytics.",
+                "- Made 300 user increments in a semester by grouping people and providing optimized services and content for each sub-groups."
+            ]
+        }
+    ],
+    "skills" : [
+        "C++", "C#", "Kotlin", "Java Script", "Type Script", 
+        "SQL", "MySQL", "PosgreSQL", "OracleDB", 
+        "Django", "Flask", "Nodejs", "Spring",
+        "No-SQL", "MongoDB", "Elasticsearch", "Hadoop", "Kafka", "Docker", "Kubernetes",
+        "Winform", "Electron", "Andriod", "Flutter", "React Navite", "React"
+    ]
+}

@@ -21,8 +21,6 @@
 body {
     font-size: var(--h5);
     font-family: "Century Gothic" Lato Calibri Arial Sans-serif;
-    padding : 0.1vh;
-    margin : 0;
 }
 .name{
     font-size: var(--h1);

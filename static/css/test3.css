@@ -149,8 +149,7 @@ img {
 
 .cert-item{
     margin-left : 0.5vh;
-    padding-top: 0.1vh;
-    padding-bottom: 0.1vh;
+    margin-bottom : 0.30vh;
 }
 .edu_title{
     font-weight: bold;
@@ -167,7 +166,8 @@ img {
     color : rgb(82, 82, 82);
 }
 .edu_item{
-    margin : 0.5vh;
+    margin-left : 0.5vh;
+    margin-bottom : 0.30vh;
 }
 
 
@@ -176,7 +176,10 @@ img {
     font-size: 1.0vh;
 }
 .award_item{
-    margin : 0.5vh;
+    /* margin : 0.5vh; */
+    margin-left : 0.5vh;
+    /* margin-top : 0.15vh; */
+    margin-bottom : 0.20vh;
 }
 .award_title {
     margin-top : 0.25vh;
@@ -190,6 +193,32 @@ img {
     color : rgb(82, 82, 82);
 }
 .award_contents{
+    margin-right : 0.25vh;
+    margin-left : 0.25vh;
+    font-size: var(--h5);
+}
+
+.publication{
+    font-size: 1.0vh;
+}
+.publication_item{
+    /* margin : 0.5vh; */
+    margin-left : 0.5vh;
+    /* margin-top : 0.15vh; */
+    margin-bottom : 0.20vh;
+}
+.publication_title {
+    margin-top : 0.25vh;
+    font-weight: bold;
+    font-size : var(--h5);
+    display: flex;
+    justify-content: space-between;
+}
+.publication_title span {
+    font-size : 0.9vh;
+    color : rgb(82, 82, 82);
+}
+.publication_contents{
     margin-right : 0.25vh;
     margin-left : 0.25vh;
     font-size: var(--h5);

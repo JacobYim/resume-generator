@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import json
-from parser import * 
+# from parser import * 
 app = Flask(__name__)
 import json
 import os
@@ -29,27 +29,44 @@ def hello_world():
 @app.route('/template3', methods=['GET'])
 def tempelate3():
 
-    files = os.listdir('jobs')
+    # files = os.listdir('jobs')
+    # file = files[0]
+    # print(file)
+    # f = open("jobs/"+file, "r+")
+    # data = json.load(f)
+    # data['title'] = file.split('.')[0]
+    # return render_template('test3.html', 
+    #     data = data
+    # )
+
+    key = request.args.get('f')
+    files = list( filter ( lambda x : key in x, os.listdir('jobs/json/')))
     file = files[0]
-    print(file)
-    f = open("jobs/"+file, "r+")
+    f = open("jobs/json/"+file, "r+")
     data = json.load(f)
     data['title'] = file.split('.')[0]
-    return render_template('test3.html', 
-        data = data
-    )
 
-@app.route('/template1', methods=['GET'])
+    res = render_template('test3.html', data = data)
+    res = res.replace("&lt;strong&gt;", "<strong>")
+    res = res.replace("&lt;/strong&gt;", "</strong>")
+    return res
+
+
+@app.route('/template4', methods=['GET'])
 def tempelate1():
 
-    files = os.listdir('jobs')
+    key = request.args.get('f')
+    files = list( filter ( lambda x : key in x, os.listdir('jobs/json/')))
     file = files[0]
-    print(file)
-    f = open("jobs/"+file, "r+")
+    f = open("jobs/json/"+file, "r+")
     data = json.load(f)
     data['title'] = file.split('.')[0]
 
-    return render_template('template4.html', data = data)
+    res = render_template('template4.html', data = data)
+    res = res.replace("&lt;strong&gt;", "<strong>")
+    res = res.replace("&lt;/strong&gt;", "</strong>")
+
+    return res
 
 
 if __name__ == '__main__':

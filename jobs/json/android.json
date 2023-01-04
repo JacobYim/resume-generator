@@ -1,0 +1,129 @@
+{
+    "head" : {
+      "name" : "Junghwan Yim",
+      "position" : "Graduate Student Researcher",
+      "introduction" : "Software Engineer solving problems with having broad data domain knowledge, development skills and deep understanding of AI, mathematical, or statistical modeling skills. Having experiences in analyzing, modeling, visualizing, and deploying various typed data as well as building the data pipeline, web, app service in both academic and industry fields. Having experiences leading teams or communities as a president or a project manager and achieving remarkable achievement with teams. Learn fast and solve problems by applying it by sharing what I learn with the team, thus maximizing the team's productivity."  
+    },
+    "education":[ 
+        {
+            "institution" : "University at Buffalo",
+            "period" : "2016 - 2022",
+            "degrees" : [
+                "Master of Science in Physics",
+                "Bachelor of Science in Computational Physics",
+                "Bachelor of Science in Computer Science"
+            ]
+        },
+        {
+            "institution" : "State University at New York in Fredonia",
+            "period" : "2013 - 2016",
+            "degrees" : [
+                "Bachelor of Science in Physics with Pre-Law",
+                "Bachelor of Science in Business Administration (Music Industry)"
+            ]
+        }
+    ],
+    "certificates" : [
+        {
+            "title" : "Data Intensive Computing",
+            "institution" : "University at Buffalo"
+        },{
+            "title" : "Probabilistic Graphical Model",
+            "institution" : "Stanford University (Coursera)"
+        }
+    ],
+    "award" :[ 
+        {
+            "title":"Meritorious Service Medal",
+            "institution" : "Republic of Korea Personnel Command",
+            "description" : "- Awarded in K-Startup Contest by designing and developing ingredient managing system and recipe recommend system from the commander of ROK Personnel Command, two-star rear admiral."
+        },
+        {
+            "title":"Meritorious Service Medal",
+            "institution" : "Republic of Korea Cyber Operation Command",
+            "description" : "- Awarded for contribution and excellency by software development from the commander of ROK Cyber Operation Command, two-star rear admiral."
+        }
+    ],
+    "career" :[ 
+        {
+            "career_title" : "Graduate Student Researcher",
+            "period" : "01/2021 - present",
+            "place" :  "University at Buffalo",
+            "address" : "Buffalo, NY",
+            "works" : [
+                {
+                    "title" : "2-Step Biometric Authentication by IMU Sensors at Phone and Watch Development",
+                    "description" : [
+                        "- Developing a model authenticating users by comparing transforming function between IMU sensor signals at phone and watch for each person with signal processing and GAN model.",
+                        "- Developed applications for experiments and tests by mobile Android and system programing with reverse engineering."
+                    ]
+                },
+                {
+                    "title" : "Remote CAN-BUS Controll Application Development",
+                    "description" : [
+                        "- Analyzed the signal of CAN-BUS with Arduino Module and found signals of controlling vehicle with reverse engineering technique.",
+                        "- Developed Android application to control and monitor the CAN-BUS signals scanned by the Arduino module."
+                    ]
+                },
+                {
+                    "title" : "Traffic Sign Detection Application Development",
+                    "description" : [
+                        "- Trained Yolo and RCNN models for traffic sign detection based on the knowledge graph and Mapiliary Traffic Sign Dataset, and the best model among models recorded 70% accuracy.",
+                        "- Achieved stable and lighter detection performance using Kalman-Filter and SLAM algorithm and calibration model and composed ROS package mapping detected the traffic signs and the distance with the traffic sign into HD (High Digital) Map and tested with composed Andriod application."
+                    ]
+                }
+            ]
+        },
+        {
+            "career_title" : "Data Scientist",
+            "period" : "05/2019 - 12/2020",
+            "place" :  "Republic of Korea Cyber Operation Command",
+            "address" : "Seoul, Republic of Korea",
+            "works" : [
+                {
+                    "title" : "Intelligence Operation System Development",
+                    "description" : [
+                        "- Developed an entire real-time stream data-driven intelligence system (Data Pipeline) collecting data and assisting analysis using TensorFlow Server, Apache Ecosystem (Hadoop, Kafka, and Spark) and ELK stack with the operation and development team.", 
+                        "- Developed Natural Language Processing, Image Processing, Malware detection modules using Machine Learning, Deep Learning, and Reinforcement Learning to analysis the collected data with TensorFlow, Keras, and Pytorch, and optimized model to run in realtime",
+                        "- Led development team and reflected requirements with non-engineering team",
+                        "- Awarded the Meritorious Service Medals for contribution and excellency by Software Development from Corp Commander and Commander of ROK Cyber Operations Command, two-star rear admiral."
+                    ]
+                },
+                {
+                    "title" : "Inventory Management and Recipe Recommend System Design",
+                    "description" : [
+                        "- Designed and developed Andriod and iOS application demo for a data-driven recipes recommendation system for offering customized recipes based on the TensorFlow server for object detection in refrigerator of clients and personal information of the clients using TensorFlow Server, Apache Ecosystem (Hadoop, Kafka, and Spark) and ELK stack with Azure Recognition service.",
+                        "- Awarded the Meritorious Service Medal in K-Startup Contest from Commander of ROK Personnel Command, two-star rear admiral."
+                    ]
+                }
+            ]
+        }
+    ],
+    "projects" : [
+        {
+            "name" : "Simulation and Quantitative Analysis of Brownian Motions",
+            "description" : [
+                "- Designed and implemented the Brownian motion for electrons with C++, Python, MPI, CUDA, OpenMP, and p5.js. Published as the thesis of master degree."
+            ]
+        },
+        {
+            "name" : "Tastie, Mobile Application",
+            "description" : [
+                "- Developed and operated a Andriod and iOS application recommending restaurants based on the keywords to avoid suffering searching good restaurants, which in total reached 10K+ users in 2 months.",
+                "- Built a data pipeline with AWS EMR, EC2, Elasticsearch, Kafka, Next.js and Terraform"
+            ]
+        },
+        {
+            "name" : "Korean Society Webpage and Application",
+            "description" : [
+                "- Developed Korean Society Webpage and Modile Application with Flutter for Koreans in Buffalo, New York by leading Korean Students in various majors with GCP and Firebase.",
+                "- Led development team and got insights by analyzing users with survey, interviews and aggregated metrics from Google Analytics.",
+                "- Made 300 user increments in a semester by grouping people and providing optimized services and contents for each sub-groups."
+            ]
+        }
+    ],
+    "skills" : [
+        "Android", "Flutter", "ReactNavite", "React.js", "Vue.js", "Kotlin", "Java", "Javascropt", "Scala", "Python", "C", "C++", "SQL", "No-SQL Database",
+        "Airflow", "Docker", "Kubernetes", "AWS", "Azure", "GCP", "MySQL", "MongoDB", "Teraform", "GIT", "CSS", "HTML"
+    ]
+}

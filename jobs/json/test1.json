@@ -1,0 +1,172 @@
+{
+    "head" : {
+      "name" : "Junghwan Yim",
+      "position" : "Graduate Student Researcher",
+      "introduction" : "Data and Software Engineer solving problems with <strong>software development</strong> skills, <strong>analysis skills</strong>, and <strong>board data domain</strong>. Experienced in all processes of data driven software development including research (data collection, explore, analysis), design, development, testing, and deploying. Experienced leading and operating teams or communities as a president or a project manager and achieving remarkable achievements with teams. I am a fast learner and a problem solver with sharing what I learn with to team, which maximizes productivity."  
+    },
+    "education":[ 
+        {
+            "institution" : "University at Buffalo",
+            "period" : "2016 - 2022",
+            "degrees" : [
+                "Master of Science in Computational Physics",
+                "Bachelor of Science in Computer Science"
+            ] 
+        },
+        {
+            "institution" : "State University at New York in Fredonia",
+            "period" : "2013 - 2016",
+            "degrees" : [
+                "Bachelor of Science in Physics with Pre-Law",
+                "Bachelor of Science in Business Administration (Music Industry)"
+            ]
+        }
+    ],
+    "certificates" : [
+        {
+            "title" : "Data Intensive Computing",
+            "institution" : "University at Buffalo"
+        }
+    ],
+    "publication" : [
+        {
+            "title" : "EarPPG: Securing Your Identity with Your Ears",
+            "institution" : "IUI 2023"
+        },{
+            "title" : "Simulation of Brownian Motion in Dissipative System and Comparison with Langevin Equation",
+            "institution" : "Master Thesis"
+        }
+    ],
+    "award" :[ 
+        {
+            "title":"Meritorious Service Medal",
+            "institution" : "Republic of Korea Personnel Command"
+        },
+        {
+            "title":"Meritorious Service Medal",
+            "institution" : "Republic of Korea Cyber Operation Command"
+        }
+    ],
+    "career" :[ 
+        {
+            "career_title" : "Graduate Student Researcher (Data Scientist, Software Developer)",
+            "period" : "08/2016 - present",
+            "place" :  "University at Buffalo",
+            "address" : "Buffalo, NY",
+            "works" : [
+                {
+                    "설명" : [ 
+                        "- 다양한 데이터 이미지, 동영상, 음성, 음악, 랭귀지, 바이오메트릭, imu sensor, LiDAR, financial data 등 다양한 데이터를 수집하는 (Crawler, Realtime, multi-processing, multi-sensor, Aduino, RasberryPi, Bluetooth) 소프트웨어를 제작함",
+                        "- 다양한 데이터와 모델을 검증할 수 있는 (UnrealEngine, Python, C++, Fortarn, Javascript) 시뮬레이션을 개발하고,  CUDA, OpenMP를 이용하여 시스템에 최적화함",
+                        "- 데이터를 안전하게 처리할 수 있는 데이터 파이프라인을 구축함",
+                        "- 다양한 데이터를 분석하는 머신러닝, 딥러닝, 강화학습, 분석적, 통계적 모델을 디자인하고 구축함",
+                        "- 다양한 모델을 학습시키는 프로세스를 자동화하는 프로세스 및 프로그램을 구축하고 모델을 최적화시킴",
+                        "- 모델들을 배포할 수 있는 (Android, iOS, ROS, RTOS 등) 시스템을 디자인하고 구축 및 운영함",
+                        "- 데이터 프로젝트의 일련의 과정을 클라우드를 사용하여 자동화 코드로 관리함",
+                        "- 소통과 계획적인 일정 조율을 통해 데이터 프로젝트나 개발 프로젝트를 성공적으로 이끔",
+                        "- 글쓰기 스킬과 소통 능력을 통해 논문 및 프리젠테이션을 작정하고, 다양한 프로젝트와 논문을 성공적으로 작성함"
+                    ],
+                    "description" : [ 
+                        "- Various data (Crawler, Realtime, multi-processing, multi-sensor, Aduino, RasberryPi, Bluetooth) software that collects various data such as image, video, voice, music, language, biometric, imu sensor, LiDAR, and financial data produced",
+                        "- Develop simulations (UnrealEngine, Python, C++, Fortarn, Javascript) that can verify various data and models, and optimize the system using CUDA and OpenMP",
+                        "- Building a data pipeline that can safely process data",
+                        "- Design and build machine learning, deep learning, reinforcement learning, analytic and statistical models that analyze a variety of data",
+                        "- Build processes and programs that automate the process of training various models and optimizing them",
+                        "- Design, build and operate systems (Android, iOS, ROS, RTOS, etc.) to deploy models",
+                        "- Managing a series of data projects with automation code using the cloud",
+                        "- Successfully lead a data project or development project through communication and deliberate scheduling",
+                        "- Decide on thesis and presentation through writing skills and communication skills, and successfully write various projects and thesis"
+                    ]
+                }
+            ]
+        },
+        {
+            "career_title" : "Lead Software Developer",
+            "period" : "08/2016 - present",
+            "place" :  "Buffalo Korean Community (KorBuf)",
+            "address" : "Buffalo, NY",
+            "works" : [
+                {
+                    "descriptio" : [ 
+                        "처음부터 조직을 기획 및 구성하고 운영하여, 약 500명이 이용하는 플렛폼을 만듦",
+                        "중고장터, 게시판, 채팅 등의 기능을 제공하는 포털 웹 페이지 UI 및 컨텐츠를 디자인하고 개발함 (Javascript, TypeScript, React, Figma, AdobeXD, Jepline)를 만듦",
+                        "플렛폼의 서버(AWS, Firebase, GCP, PHP, JSP, Django, REST API, GraphQL, Raddis, Spark, HDFS, Kafka, Elasticsearh) 및 DB(MySQL, PostgreSQL, MongoDB, HBASE)를 기획하고 개발 및 운영함",
+                        "플렛폼를 Docker 컨테이너화 하고 Kubernetes 오케스트레이션함",
+                        "안드로이드, 아이폰용 모바일 어플리케이션을 (Flutter, Android, Swift) 개발함",
+                        "자동화 프로세스(Git, GitLab, Jenkins)를 이용해 프로젝트를 운영함",
+                        "주뉴욕영사관의 지원을 받는 공식 업타운뉴욕 커뮤니티가 됨"
+                    ],
+                    "description" : [ 
+                        "- Created a platform used by about 500 people by planning, organizing, and operating an organization from scratch",
+                        "- Designed and developed portal webpage UI and contents that provide functions such as second-hand marketplace, bulletin board, and chatting (Javascript, TypeScript, React, Figma, AdobeXD, Jepline)",
+                        "- Planning, developing and operating platform servers (AWS, Firebase, GCP, PHP, JSP, Django, REST API, GraphQL, Raddis, Spark, HDFS, Kafka, Elasticsearch) and DB (MySQL, PostgreSQL, MongoDB, HBASE) ",
+                        "- Docker containerize the platform and orchestrate it with Kubernetes",
+                        "- Developing mobile applications (Flutter, Android, Swift) for Android and iPhone",
+                        "- Run the project using an automated process (Git, GitLab, Jenkins)",
+                        "- Become an Official Uptown New York Community Supported by the New York Consulate"
+                    ]
+                }
+            ]
+        },
+        {
+            "career_title" : "Data Scientist / Software Developer",
+            "period" : "05/2019 - 12/2020",
+            "place" :  "Republic of Korea Cyber Operation Command",
+            "address" : "Seoul, Republic of Korea",
+            "works" : [
+                {
+                    "btitle" : "Developing Intelligence Operation System",
+                    "bdescription" : [
+                        "- Developed an intelligence system collecting data and assisting analysis using Apache Ecosystem and ELK stack by cooperating with the operation and development team.",
+                        "- Developed Natural Language Processing, Image Processing, Malware detection modules using Reverse Engineering, Machine Learning, Deep Learning, and Reinforcement Learning to analysis the collected data.",
+                        "- Awarded for contribution and excellency by software development from the commander of ROK Cyber Operation Command, two-star rear admiral."
+                    ]
+                },
+                {
+                    "btitle" : "Designing Inventory Management and Recipe Recommend System",
+                    "bdescription" : [
+                        "- Designed and developed demo for managing ingredients and recipes recommendation system for offering customized recipes based on the ingredients and user data.",
+                        "- Improved recogniton model for ingredients in a refregiator by analyzing and collecting user data and ingredients in their refregiator.",
+                        "- Awarded in K-Startup Contest by designing and developing ingredient managing system and recipe recommend system from the commander of ROK Personnel Command, two-star rear admiral."
+                    ]
+                },{
+                    "description" : [ 
+                        "- Developed an intelligence system collecting data and assisting analysis using Apache Ecosystem and ELK stack by cooperating with the operation and development team.",
+                        "- Developed Natural Language Processing, Image Processing, Malware detection modules using Reverse Engineering, Machine Learning, Deep Learning, and Reinforcement Learning to analysis the collected data.",
+                        "- Awarded for contribution and excellency by software development from the commander of ROK Cyber Operation Command, two-star rear admiral.",
+                        "- Designed and developed demo for managing ingredients and recipes recommendation system for offering customized recipes based on the ingredients and user data.",
+                        "- Improved recogniton model for ingredients in a refregiator by analyzing and collecting user data and ingredients in their refregiator.",
+                        "- Awarded in K-Startup Contest by designing and developing ingredient managing system and recipe recommend system from the commander of ROK Personnel Command, two-star rear admiral."
+                    ]
+                }
+            ]
+        }
+    ],
+    "projects" : [
+        {
+            "name" : "Vehicle CAN Monitoring Software",
+            "description" : [
+                "- Developed analyzing and sending signals to CAN Bus Network in car remotely with C# and .Net Winform",
+                "- Automatically analyzed Vehicle Can Bus Database and applied by the VIN in the Database",
+                "- Made easy to check up the connected car service status and driving performance by utilizing the vehicle's odometer remotely."
+            ]
+        },
+        {
+            "name" : "Tastie, Mobile Application",
+            "description" : [
+                "- Developed and operated a mobile application recommending restaurants based on the keywords to avoid suffering searching good restaurants, which in total reached 10K+ users in 2 months.",
+                "- Analyzed keywords, user data, and restaurant data collected by quantitating and qualitative methods to improve user experience.",
+                "- Improved recommending system and user interface by the discovered insight in analysis."
+            ]
+        }
+    ],
+    "skills" : [
+
+		"Python", "Java", "SQL", 
+        "Java", "Python", "C++", "C#", "Kotlin", "Java Script", "Type Script", 
+        "SQL", "MySQL", "PosgreSQL", "OracleDB", 
+        "Django", "Flask", "Nodejs", "Spring",
+        "No-SQL", "MongoDB", "Elasticsearch", "Hadoop", "Kafka", "Docker", "Kubernetes",
+        "Winform", "Electron", "Andriod", "Flutter", "React Navite", "React"
+    ]
+}

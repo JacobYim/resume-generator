@@ -13,7 +13,7 @@
     /* project description */
     --h6: calc(0.95vh + var(--d));
     --h7: calc(1.00vh + var(--d));
-
+    --h8: calc(0.70vh + var(--d));
     --identation : 0.25vh;
     --sectiondiv : 0.25vh;
 
@@ -27,7 +27,7 @@ body {
     font-size: var(--h5);
     font-family: "Century Gothic" Lato Calibri Arial Sans-serif;
     padding : var(--p1);
-    margin : 0;
+    margin : 0.5vh;
 }
 .name{
     font-size: var(--h1);
@@ -197,7 +197,7 @@ body {
 }
 
 .certificates .item .title span{
-    font-size : var(--h7);
+    font-size : var(--h8);
     color : rgb(82, 82, 82);
 }
 
