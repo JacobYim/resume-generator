@@ -71,6 +71,17 @@
                 </div>
                 {% endfor %}
             </div>
+            <div class = "publication">
+                <div class="title">PUBLICATIONS</div>
+                {% for publication in data.publication %}
+                <div class="publication_item">
+                    <div class="publication_title">{{publication.title}} <span> {{publication.institution}} </span></div>
+                    <div class="publication_contents">
+                        {{publication.description}}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
             <div class = "skill">
                 <div class="title">
                     SKILLS & COMPETENCIES

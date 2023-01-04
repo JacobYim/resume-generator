@@ -112,7 +112,17 @@
                     </div>
                     {% endfor %}
                 </div>
-                
+                <div class = "award">
+                    <div class="title">AWARDS</div>
+                    {% for award in data.award %}
+                    <div class="award_item">
+                        <div class="award_title">{{award.title}} <span> {{award.institution}} </span></div>
+                        <div class="award_contents">
+                            {{award.description}}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
         </div>
